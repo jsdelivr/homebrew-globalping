@@ -4,7 +4,7 @@
 ## Install
 
 ```
-brew tap jsdelivr/globalping-cli
+brew tap jsdelivr/globalping
 brew install globalping
 ```
 
