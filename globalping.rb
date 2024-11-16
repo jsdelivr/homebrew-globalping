@@ -5,20 +5,20 @@
 class Globalping < Formula
   desc ""
   homepage "https://github.com/jsdelivr/globalping-cli"
-  version "1.4.2"
+  version "1.4.3"
 
   on_macos do
     on_intel do
-      url "https://github.com/jsdelivr/globalping-cli/releases/download/v1.4.2/globalping_Darwin_x86_64.tar.gz"
-      sha256 "d39db5bd1b72c10df827d51c9bccf5afeff73c5ddbaffa67236532e57d1c0e79"
+      url "https://github.com/jsdelivr/globalping-cli/releases/download/v1.4.3/globalping_Darwin_x86_64.tar.gz"
+      sha256 "75941946cb8aabe3b1e9de5cafa88e29ea89acb71e6fee76585466c0e20afffa"
 
       def install
         bin.install "globalping"
       end
     end
     on_arm do
-      url "https://github.com/jsdelivr/globalping-cli/releases/download/v1.4.2/globalping_Darwin_arm64.tar.gz"
-      sha256 "6dedca12ece21412ca3e52bea9e278ec1e4a5663d91886ee8c2aca12c7616493"
+      url "https://github.com/jsdelivr/globalping-cli/releases/download/v1.4.3/globalping_Darwin_arm64.tar.gz"
+      sha256 "d7208055806bea19ce69b9ea80480867100a18737facc022ffe836e92be1b984"
 
       def install
         bin.install "globalping"
@@ -29,8 +29,8 @@ class Globalping < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/jsdelivr/globalping-cli/releases/download/v1.4.2/globalping_Linux_x86_64.tar.gz"
-        sha256 "a8c0c1b5c68fbe4cedef3d305c5f28e63149b5e5237f83bcb8f212132b0686b4"
+        url "https://github.com/jsdelivr/globalping-cli/releases/download/v1.4.3/globalping_Linux_x86_64.tar.gz"
+        sha256 "584b32fd21137c7d13ad96b0bfa1be3c894957afc2c3e426eaddbc7937110a34"
 
         def install
           bin.install "globalping"
@@ -39,8 +39,8 @@ class Globalping < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/jsdelivr/globalping-cli/releases/download/v1.4.2/globalping_Linux_arm64.tar.gz"
-        sha256 "9076529a8b44ea4b3ab44bc0c8ac39bf50808fcc0f87cee9ab3aaaa67805ccff"
+        url "https://github.com/jsdelivr/globalping-cli/releases/download/v1.4.3/globalping_Linux_arm64.tar.gz"
+        sha256 "33fbcb36a55f5ed423d1fc17b37b4666fcfdf2c462491ac3639f1abd18870aab"
 
         def install
           bin.install "globalping"
