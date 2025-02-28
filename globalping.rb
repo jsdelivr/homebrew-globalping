@@ -5,20 +5,20 @@
 class Globalping < Formula
   desc ""
   homepage "https://github.com/jsdelivr/globalping-cli"
-  version "1.4.4"
+  version "1.5.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/jsdelivr/globalping-cli/releases/download/v1.4.4/globalping_Darwin_x86_64.tar.gz"
-      sha256 "0977d023fc7a11a659245a1c992058799202368a5629a5a147db8a094e423c26"
+      url "https://github.com/jsdelivr/globalping-cli/releases/download/v1.5.0/globalping_Darwin_x86_64.tar.gz"
+      sha256 "377bdb224bea2a7b710846b609ceda62a48828b8f6cf971c87cb07c9fa228c10"
 
       def install
         bin.install "globalping"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/jsdelivr/globalping-cli/releases/download/v1.4.4/globalping_Darwin_arm64.tar.gz"
-      sha256 "bc8a2afc161ffabfc2ec6b0c128266eb1c5f33ad6e0a6714f6723b9133ddf483"
+      url "https://github.com/jsdelivr/globalping-cli/releases/download/v1.5.0/globalping_Darwin_arm64.tar.gz"
+      sha256 "6b4e4dd8f98d243a55aab76f708d0c835e472bbc5e5812b654b7098e9df7d039"
 
       def install
         bin.install "globalping"
@@ -29,8 +29,8 @@ class Globalping < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/jsdelivr/globalping-cli/releases/download/v1.4.4/globalping_Linux_x86_64.tar.gz"
-        sha256 "f7096be20b2be53ee4f2a7fc3e252afd2903269ca2446bff8ec49c6f0d86c3fb"
+        url "https://github.com/jsdelivr/globalping-cli/releases/download/v1.5.0/globalping_Linux_x86_64.tar.gz"
+        sha256 "c96c0de8e8ede5dd4679ff41de829acec6977df8fb7e2460027a860382f238ee"
 
         def install
           bin.install "globalping"
@@ -39,8 +39,8 @@ class Globalping < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/jsdelivr/globalping-cli/releases/download/v1.4.4/globalping_Linux_arm64.tar.gz"
-        sha256 "2ee522be57d20443adfa7eea5f5357951d34cb59696e3bb55135352dfe213532"
+        url "https://github.com/jsdelivr/globalping-cli/releases/download/v1.5.0/globalping_Linux_arm64.tar.gz"
+        sha256 "aff39e303838539d305a462dd4202100d05adda4ffde012287c65bd1f8cce7f4"
 
         def install
           bin.install "globalping"
