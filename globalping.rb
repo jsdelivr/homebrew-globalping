@@ -5,20 +5,20 @@
 class Globalping < Formula
   desc ""
   homepage "https://github.com/jsdelivr/globalping-cli"
-  version "1.5.2"
+  version "1.6.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/jsdelivr/globalping-cli/releases/download/v1.5.2/globalping_Darwin_x86_64.tar.gz"
-      sha256 "5c1c11887a718ac329f75cd7d44d0b0cb52e6785a04f0648266f2fcb00da976f"
+      url "https://github.com/jsdelivr/globalping-cli/releases/download/v1.6.0/globalping_Darwin_x86_64.tar.gz"
+      sha256 "975c86828f35e9583bb5fcd63a43ea5515fa93cfcdf7c167d438255be3080c70"
 
       define_method(:install) do
         bin.install "globalping"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/jsdelivr/globalping-cli/releases/download/v1.5.2/globalping_Darwin_arm64.tar.gz"
-      sha256 "ee94f0af519e8896aa89d327b4751d7fc31fa57af74e7de46d3f3194d0b60604"
+      url "https://github.com/jsdelivr/globalping-cli/releases/download/v1.6.0/globalping_Darwin_arm64.tar.gz"
+      sha256 "2b1536ce8ff9736b4102f645e598cfe280e2d390037a49a468f5667af306c20f"
 
       define_method(:install) do
         bin.install "globalping"
@@ -28,15 +28,15 @@ class Globalping < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jsdelivr/globalping-cli/releases/download/v1.5.2/globalping_Linux_x86_64.tar.gz"
-      sha256 "d4da509136afaf522fae728d172e3fda900fa81a487eef5019d18f8f9cbee743"
+      url "https://github.com/jsdelivr/globalping-cli/releases/download/v1.6.0/globalping_Linux_x86_64.tar.gz"
+      sha256 "e1ab93a44573d707cba62a7c67f5a2aaf1ad6dbafc35a2d036026a30fa01401b"
       define_method(:install) do
         bin.install "globalping"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jsdelivr/globalping-cli/releases/download/v1.5.2/globalping_Linux_arm64.tar.gz"
-      sha256 "9b02b04264d4cfa9c7ddd6909033b4c01227a8b9d4c5a5c3f3e4ded746958aeb"
+      url "https://github.com/jsdelivr/globalping-cli/releases/download/v1.6.0/globalping_Linux_arm64.tar.gz"
+      sha256 "110da15b5290d226c622a9c10f0ff9896b13761d29548ce07e9a7b653c4118d5"
       define_method(:install) do
         bin.install "globalping"
       end
